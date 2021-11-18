@@ -28,9 +28,7 @@
   <header class="header" id="header">
     <div class="nav">
       <div class="container container_flex">
-        <a href="#home-page" class="logo">
-          <img src="img/logo.svg" alt="Ceramic Spece">
-        </a>
+        <a href="#home-page" class="logo"></a>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -66,7 +64,7 @@
           </p>
           <a href="#" class="btn btn_offer">Наши проекты</a>
         </div>
-        <a href="#" class="arrow-down">\/</a>
+        <a href="#" class="arrow-down"></a>
       </div>
     </div>
   </header>
@@ -134,17 +132,17 @@
           Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
       </p>
       <div class="projects-card">
-        <img src="https://images.unsplash.com/photo-1481401908818-600b7a676c0d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
-        <div class="projects-card__overlay">
-          <a href="#" class="button">View Trips</a>
+        <div class="projects-card__item">
+          <img src="https://images.unsplash.com/photo-1481401908818-600b7a676c0d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
+          <a class="projects-card__overlay"></a>
         </div>
-        <img src="https://images.unsplash.com/photo-1516547375098-9efa2ae4f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
-        <div class="projects-card__overlay">
-          <a href="#" class="button">View Trips</a>
+        <div class="projects-card__item">
+          <img src="https://images.unsplash.com/photo-1516547375098-9efa2ae4f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
+          <a class="projects-card__overlay"></a>
         </div>
-        <img src="https://images.unsplash.com/photo-1534964652860-3dc4dd30bb29?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
-        <div class="projects-card__overlay">
-          <a href="#" class="button">View Trips</a>
+        <div class="projects-card__item">
+          <img src="https://images.unsplash.com/photo-1534964652860-3dc4dd30bb29?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
+          <a class="projects-card__overlay"></a>
         </div>
       </div>
       <div class="achievements">
@@ -199,8 +197,10 @@
         <p class="section-text section-text_video">
             Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
         </p>
-        <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/_6a7vOp7Nm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+        <div class="video-wrap">
+          <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/_6a7vOp7Nm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>  
       </div>
     </div>
   </section>
@@ -212,21 +212,23 @@
             <h3 class="footer-title">
               На связи
             </h3>
-            <ul class="contacts">
-            <li class="contacts__item">
-              <a href="mailto:info@ceramicwebsite.com" class="info__mail">info@ceramicwebsite.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+13994444444" class="menu__tel">
-          +1 (399) 444-44-44
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+13994444444" class="menu__tel">
-          Киев,  Русановские сады 13
-              </a>
-            </li>
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a href="mailto:info@ceramicwebsite.com">
+                  <img src="img/email.svg" alt="Написать" class="contacts-list__icon">
+                  info@ceramicwebsite.com
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a href="tel:+13994444444">
+                  <img src="img/phone.svg" alt="Позвонить" class="contacts-list__icon">
+            +1 (399) 444-44-44
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <img src="img/bookmark.svg" alt="Адрес" class="contacts-list__icon">
+            Киев,  Русановские сады 13
+              </li>
             </ul>
             <span class="rights">
               © Все права защищены

@@ -41,7 +41,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
   
   .section-title {
@@ -80,9 +79,9 @@ body {
   }
   
   .logo {
-    background: url('');
-    width: 100px;
-    height: 16px;
+    background: url('../img/logo.svg');
+    width: 91px;
+    height: 43px;
     display: block;
   }
   
@@ -217,14 +216,17 @@ body {
   .projects-card {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(184, 184, 184, 1);
   }
   
   .projects-card__img {
     width: 345px;
     height: 265px;
     border-radius: 15px;
-    margin: 78px 0 89px;
-    border-bottom: 1px solid rgba(184, 184, 184, 1);
+    margin: 0 0 89px;
+  }
+  .projects-card__overlay {
+    
   }
   
   .achievements__list {
@@ -280,7 +282,6 @@ body {
     
   .video-content {
     padding: 103px 0;
-    border-bottom: 1px solid rgba(184, 184, 184, 1);
   }
   
   .section-title_video {
@@ -289,15 +290,21 @@ body {
   
   .section-text_video {
     text-align: center;
+    margin: 17px auto 78px;
   }
+
+  .video-wrap {
+    padding-bottom: 62px;
+    width: 830px;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(184, 184, 184, 1);
+  }
+
   .video-frame {
     width: 830px;
     height: 426px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    padding-bottom: 62px;
-    
+    border-radius: 10px;    
   }
   
   /* footer */
@@ -307,19 +314,39 @@ body {
     padding: 100px 0;
   }
   
+  .footer-title {
+    font-size: 19px;
+    margin-bottom: 41px;
+  }
   .footer-info {
     display: flex;
     justify-content: space-between;
   }
   
-  .contacts__item
-  .footer-info__rights
+
+  .contacts-list__item {
+    margin-bottom: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
   
-  .footer-title {
-    margin-bottom: 16px;
+  .contacts-list__item a {
+    color: #000;
+    display: flex
+  }
+  
+  .contacts-list__icon {
+    margin-right: 17px;
+  }
+
+  .rights {
+    font-size: 14px;
+    margin-top: 44px;
   }
   
   .subscribe__title{
+    font-size: 19px;
     margin-bottom: 16px;
   }
   
@@ -348,6 +375,9 @@ body {
     width: 45px;
     height: 45px;
     padding: 0;
+    border: none;
+    border-radius: 50%;
+	  cursor: pointer;
     /* margin-top: 23px; */
     background: #5F51FF;
     transition: background 0.5s ease;
@@ -356,4 +386,9 @@ body {
   .btn_subscribe:hover {
     background: #4438CB;
     transition: background 0.5s ease;
+  }
+
+  .subscribe__text {
+    font-size: 13px;
+    padding-top: 23px;
   }
