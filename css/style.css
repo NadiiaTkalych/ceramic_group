@@ -226,7 +226,7 @@ body {
     margin: 0 0 89px;
   }
   .projects-card__overlay {
-    
+
   }
   
   .achievements__list {
@@ -322,10 +322,12 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  
+  .contacts-list {
+    margin-bottom: 44px;
+  }
 
   .contacts-list__item {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -342,7 +344,6 @@ body {
 
   .rights {
     font-size: 14px;
-    margin-top: 44px;
   }
   
   .subscribe__title{
