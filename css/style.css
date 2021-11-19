@@ -168,14 +168,21 @@ body {
     display: flex;
     width: 508px;
     align-items: center;
-  /*   margin: 51px 0; */
   }
   
   .services__img {
+    object-fit: cover;
     width: 210px;
     height: 144px;
     border-radius: 0px 10px 10px 10px;
     margin-right: 30px;
+    box-shadow: 0;
+    transition: box-shadow 0.5s ease;
+  }
+
+  .services__img:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    transition: box-shadow 0.5s ease;
   }
   
   .services-wrapper {
@@ -208,6 +215,7 @@ body {
   }
   
   /* projects */
+  
   .projects {
     padding: 109px 0 205px;
     background: #F7F6F8;
@@ -216,19 +224,42 @@ body {
   .projects-card {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(184, 184, 184, 1);
   }
   
   .projects-card__img {
+    object-fit: cover;
     width: 345px;
     height: 265px;
     border-radius: 15px;
-    margin: 0 0 89px;
   }
-  .projects-card__overlay {
 
+  .projects-card__overlay {
+    display: block;
+    position: relative;
+    transition: opacity 0.5s ease;
   }
   
+  .projects-card__overlay:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 1;
+    visibility: none;
+    background: rgba(0,0,0,0.5) url('../img/search.svg') no-repeat center;
+    transition: opacity 0.5s ease;
+  }
+
+  .achievements {
+    margin-top: 89px;
+    border-top: 1px solid rgba(184, 184, 184, 1);
+  }
+
   .achievements__list {
     display: flex;
     justify-content: space-between;
@@ -247,7 +278,7 @@ body {
   
   .more-wrap {
     padding: 52px 0;
-    margin: 65px auto -20%;
+    margin: 0 auto -30%;
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -281,7 +312,7 @@ body {
   /* video */
     
   .video-content {
-    padding: 103px 0;
+    padding: 270px 0 103px;
   }
   
   .section-title_video {
@@ -335,7 +366,7 @@ body {
   
   .contacts-list__item a {
     color: #000;
-    display: flex
+    display: flex;
   }
   
   .contacts-list__icon {
@@ -345,7 +376,18 @@ body {
   .rights {
     font-size: 14px;
   }
+
+  .contacts-list_networks {
+    display: flex;
+    width: 242px;
+    justify-content: space-between;
+    margin-top: 82px;
+  }
   
+  .subscribe {
+    margin: auto 0;
+  }
+
   .subscribe__title{
     font-size: 19px;
     margin-bottom: 16px;
@@ -375,11 +417,10 @@ body {
     font-size: 13px;
     width: 45px;
     height: 45px;
-    padding: 0;
+    padding: 12px 14px 16px 11px;
     border: none;
     border-radius: 50%;
 	  cursor: pointer;
-    /* margin-top: 23px; */
     background: #5F51FF;
     transition: background 0.5s ease;
   }

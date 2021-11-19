@@ -79,7 +79,9 @@
       </p>
       <div class="services">
         <div class="services__item">
-          <img src="https://images.unsplash.com/photo-1595351298020-038700609878?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="services__img" alt="courses">
+          <a href="#" class="services__link">
+            <img src="img/courses.jpg" class="services__img" alt="courses">
+          </a>
           <div class="services-wrapper">
             <h3 class="services__title">Наши курсы</h3>
             <p class="services__text">
@@ -89,7 +91,9 @@
           </div>
         </div>
         <div class="services__item">
-          <img src="https://media.istockphoto.com/photos/passing-on-her-pottery-skills-to-mom-picture-id506875174" class="services__img" alt="consultation">
+          <a href="#" class="services__link">
+            <img src="img/consultation.jpg" class="services__img" alt="consultation">
+          </a>
           <div class="services-wrapper">
             <h3 class="services__title">Консультация мастера</h3>
             <p class="services__text">
@@ -99,7 +103,9 @@
           </div>
         </div>
         <div class="services__item">
-          <img src="https://www.rgu.ac.uk/images/Facility_Hero_Images/Ceramics-Glass-Workshop-flickr-35096287836_035d298789_k.jpg" class="services__img" alt="coworking">
+          <a href="#" class="services__link">
+            <img src="img/coworking.jpg" class="services__img" alt="coworking">
+          </a>
           <div class="services-wrapper">
             <h3 class="services__title">Коворкинг</h3>
             <p class="services__text">
@@ -109,7 +115,9 @@
           </div>
         </div>
         <div class="services__item">
-          <img src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="services__img" alt="shop">
+          <a href="#" class="services__link">
+            <img src="img/shop.jpg" class="services__img" alt="shop">
+          </a>
           <div class="services-wrapper">
             <h3 class="services__title">Магазин</h3>
             <p class="services__text">
@@ -133,16 +141,19 @@
       </p>
       <div class="projects-card">
         <div class="projects-card__item">
-          <img src="https://images.unsplash.com/photo-1481401908818-600b7a676c0d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
-          <a class="projects-card__overlay"></a>
+          <a href="#" class="projects-card__overlay">
+            <img src="img/photo1.jpg" alt="" class="projects-card__img">
+          </a>
         </div>
         <div class="projects-card__item">
-          <img src="https://images.unsplash.com/photo-1516547375098-9efa2ae4f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
-          <a class="projects-card__overlay"></a>
+          <a href="#" class="projects-card__overlay">
+            <img src="img/photo2.jpg" alt="" class="projects-card__img">
+          </a>
         </div>
         <div class="projects-card__item">
-          <img src="https://images.unsplash.com/photo-1534964652860-3dc4dd30bb29?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="" class="projects-card__img">
-          <a class="projects-card__overlay"></a>
+          <a href="#" class="projects-card__overlay">
+            <img src="img/photo3.jpg" alt="" class="projects-card__img">
+          </a>
         </div>
       </div>
       <div class="achievements">
@@ -238,15 +249,23 @@
             <h3 class="footer-title">
               Давайте дружить
             </h3>
-            <!--noindex-->
-            <a href="https://www.vkontakte.com/" rel="nofollow noopener noreferrer" target="_blank">ВКонтакте</a>
-            <!--/noindex-->
-            <!--noindex-->
-            <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank">instagram/iam</a>
-            <!--/noindex-->
-            <!--noindex-->
-            <a href="https://www.facebook.com/" rel="nofollow noopener noreferrer" target="_blank">Facebook/iam</a>
-            <!--/noindex-->
+            <ul class="contacts-list contacts-list_networks">
+              <li class="contacts-list__item">
+                <!--noindex-->
+                <a href="https://www.vkontakte.com/" rel="nofollow noopener noreferrer" target="_blank">ВКонтакте</a>
+                <!--/noindex-->
+              </li>
+              <li class="contacts-list__item">
+                <!--noindex-->
+                <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank">instagram</a>
+                <!--/noindex-->
+              </li>
+              <li class="contacts-list__item">
+                <!--noindex-->
+                <a href="https://www.facebook.com/" rel="nofollow noopener noreferrer" target="_blank">Facebook</a>
+                <!--/noindex-->
+              </li>
+            </ul>
           </div>
           <div class="subscribe">
             <h3 class="subscribe__title">
@@ -254,7 +273,9 @@
             </h3>
             <form action="#" class="subscribe__form">
               <input class="subscribe__input" type="email" name="email" placeholder="Ваш e-mail" required>
-              <button type="submit" class="btn btn_subscribe"></button>
+              <button type="submit" class="btn btn_subscribe">
+                <img src="img/send.svg" alt="">
+              </button>
             </form>
             <p class="subscribe__text">
               Вдохновение и полезная информация
