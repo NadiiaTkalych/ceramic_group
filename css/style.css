@@ -69,7 +69,7 @@ body {
   /* header */
   
   .header {
-    background: linear-gradient(57.79deg, rgba(51, 5, 111, 0.58) 27.19%, rgba(56, 32, 87, 0.29) 81.02%), url('') no-repeat center top / cover;
+    background: linear-gradient(57.79deg, rgba(51, 5, 111, 0.58) 27.19%, rgba(56, 32, 87, 0.29) 81.02%), url('../img/header.jpg') no-repeat center top / cover;
     color: #fff;
     padding-bottom: 70px;
   }
