@@ -377,13 +377,23 @@ body {
     font-size: 14px;
   }
 
-  .contacts-list_networks {
+  .contacts-list__networks {
     display: flex;
     width: 242px;
     justify-content: space-between;
     margin-top: 82px;
   }
   
+  .contacts-list__networks_link {
+    color: #000;
+    transition: color 0.5s ease 0s;
+  }
+
+  .contacts-list__networks_link:hover {
+    color: #5F51FF;
+    transition: color 0.5s ease 0s;
+  }
+
   .subscribe {
     margin: auto 0;
   }
