@@ -388,7 +388,7 @@ body {
   .contacts-list__networks {
     display: flex;
     justify-content: space-between;
-    max-width: 242px;
+    min-width: 242px;
     margin-top: 82px;
   }
   
