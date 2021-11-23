@@ -34,7 +34,7 @@ body {
   }
   
   .container {
-    width: 1144px;
+    max-width: 1144px;
     margin: 0 auto;
   }
   
@@ -52,7 +52,7 @@ body {
   
   .section-text {
     margin-bottom: 78px;
-    width: 561px;
+    max-width: 561px;
     max-width: 561px;
   }
   
@@ -72,7 +72,6 @@ body {
   .header {
     background: linear-gradient(57.79deg, rgba(51, 5, 111, 0.58) 27.19%, rgba(56, 32, 87, 0.29) 81.02%), url('../img/header.jpg') no-repeat center top / cover;
     color: #fff;
-    padding-bottom: 70px;
   }
   
   .nav {
@@ -80,7 +79,7 @@ body {
   }
   
   .logo {
-    background: url('../img/logo.svg');
+    background: url('../img/logo.svg') no-repeat;
     width: 91px;
     height: 43px;
     display: block;
@@ -104,12 +103,26 @@ body {
     transition: border-bottom 0.5s ease;
   }
   
+  .menu__item_active a {
+    border-bottom: 2px solid #fff;
+  }
+
   .nav__tel {
     color: #fff;
+    transition: color 0.5s ease 0s;
+  }
+
+  .nav__tel:hover {
+    color: #5F51FF;
+    transition: color 0.5s ease 0s;
+  }
+
+  .offer-wrapper {
+    padding: 142px 0 70px;
   }
   
   .offer {
-    padding: 142px 0 70px;
+    margin-bottom: 168px;
     width: 639px;
   }
   
@@ -139,8 +152,7 @@ body {
     height: 27px;
     background: url('../img/arrow-down.svg') no-repeat;
     display: block;
-    margin-top: 168px;
-    margin-right: 0 auto;
+    margin-right: auto;
     opacity: 0.5;
     transition: opacity 0.5s ease;
   }
@@ -159,8 +171,6 @@ body {
   .services {
     display: flex;
     flex-wrap: wrap;
-    height: 339px;
-    align-content: space-between;
     justify-content: space-between;
     margin-bottom: 78px;
   }
@@ -169,6 +179,7 @@ body {
     display: flex;
     width: 508px;
     align-items: center;
+    margin-bottom: 51px;
   }
   
   .services__img {
@@ -186,19 +197,13 @@ body {
     transition: box-shadow 0.5s ease;
   }
   
-  .services-wrapper {
-    width: 268px;
-    padding: 14px;
-    
-  }
   .services__title {
     font-size: 19px;
   }
   
   .services__text {
     font-size: 15px;
-    width: 268px;
-    padding: 15px 0;
+    margin: 15px 0;
   }
   
   .services__price {
@@ -226,12 +231,13 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .projects-card__img {
     object-fit: cover;
     width: 345px;
     height: 265px;
     border-radius: 15px;
+    display: block;
   }
 
   .projects-card__overlay {
@@ -259,12 +265,13 @@ body {
   .achievements {
     margin-top: 89px;
     border-top: 1px solid rgba(184, 184, 184, 1);
+    padding-top: 50px;
   }
 
   .achievements__list {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0 80px;
+    margin-bottom: 80px;
   }
   
   .achievements__item {
@@ -281,13 +288,10 @@ body {
     padding: 52px 0;
     margin: 0 auto -30%;
     max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: 560px;
-    top: 2454px;
     background: #F4EAFF;
     border-radius: 15px;
+    text-align: center;
+    z-index: 10;
   }
   
   .more-wrap__title {
@@ -297,12 +301,13 @@ body {
   .more-wrap__text {
     width: 625px;
     text-align: center;
-    padding: 21px 0 27px;
+    margin: 21px auto 27px;
   }
   
   .btn_more-wrap {
     background: #5F51FF;
     transition: background 0.5s ease;
+    margin: auto;
   }
   
   .btn_more-wrap:hover {
@@ -312,7 +317,7 @@ body {
   
   /* video */
     
-  .video-content {
+  .video {
     padding: 270px 0 103px;
   }
   
@@ -333,8 +338,8 @@ body {
     border-bottom: 1px solid rgba(184, 184, 184, 1);
   }
 
-  .video-frame {
-    width: 830px;
+  .video-wrap iframe {
+    width: 100%;
     height: 426px;
     border-radius: 10px;    
   }
@@ -402,14 +407,14 @@ body {
   
   .subscribe__form {
     display: flex;
-    margin: 0 auto;
+    margin: 16px auto 23px;
   }
   
   .subscribe__input {
     font-family: 'Ubuntu', sans-serif;
     font-size: 13px;
-    padding-left: 33px;
-    margin: 16px 0 23px;
+    padding: 0 33px 0 60px;
+    outline: none;
     width: 385px;
     height: 45px;
     background: #FFFFFF;
@@ -424,7 +429,7 @@ body {
     width: 45px;
     height: 45px;
     padding: 12px 14px 16px 11px;
-    margin: 16px -10%;
+    margin-left: -10%;
     border: none;
     border-radius: 50%;
 	  cursor: pointer;
