@@ -536,7 +536,7 @@ body {
 @media (max-width: 575px) {
 	.container {
 		padding: 0 15px;
-		width: auto%;
+		width: auto;
 	}
   .offer__title {
     width: 70%;
