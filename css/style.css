@@ -61,7 +61,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     border-radius: 119px;
-    padding: 13px 36px 15px;
+    padding: 14px 36px 15px;
     color: #fff;
     display: block;
     width: 200px;
@@ -130,7 +130,7 @@ body {
   .offer__title {
     font-size: 48px;
     line-height: 1.20em;
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
   
   .offer__text {
@@ -149,8 +149,8 @@ body {
   }
   
   .arrow-down {
-    width: 18px;
-    height: 27px;
+    width: 16px;
+    height: 24px;
     background: url('../img/arrow-down.svg') no-repeat;
     display: block;
     margin-right: auto;
@@ -166,7 +166,7 @@ body {
   /* services */
   
   .all-services {
-    padding: 100px 0 110px;
+    padding: 100px 0 100px;
   }
   
   .services {
@@ -180,7 +180,7 @@ body {
     display: flex;
     width: 508px;
     align-items: center;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
   }
   
   .services__img {
@@ -470,6 +470,9 @@ body {
 	}
   .nav__tel {
     display: none;
+  }
+  .btn {
+    font-size: 15px;
   }
   .projects-card {
     flex-wrap: wrap;
