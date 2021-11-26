@@ -61,7 +61,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     border-radius: 119px;
-    padding: 14px 36px 15px;
+    padding: 13px 36px 15px;
     color: #fff;
     display: block;
     width: 200px;
@@ -264,9 +264,9 @@ body {
   }
 
   .achievements {
-    margin-top: 89px;
+    margin-top: 90px;
     border-top: 1px solid rgba(184, 184, 184, 1);
-    padding-top: 50px;
+    padding-top: 63px;
   }
 
   .achievements__list {
@@ -474,6 +474,9 @@ body {
   .btn {
     font-size: 15px;
   }
+  .more-wrap {
+    margin-bottom: -431px;
+  }
   .projects-card {
     flex-wrap: wrap;
   }
@@ -494,7 +497,7 @@ body {
     justify-content: flex-start;
   }
   .contacts-wrap {
-    margin: 0 100px 82px 0;
+    margin: 0 145px 82px 0;
   }
 }
 
