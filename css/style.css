@@ -290,7 +290,7 @@ body {
     margin-top: 10px;
   }
   .more-wrap {
-    padding: 51px 0;
+    padding: 50px 0;
     margin: 0 auto -371px;
     max-width: 800px;
     background: #F4EAFF;
@@ -307,7 +307,7 @@ body {
   .more-wrap__text {
     max-width: 625px;
     text-align: center;
-    margin: 21px auto 24px;
+    margin: 21px auto 27px;
   }
   
   .btn_more-wrap {
@@ -324,7 +324,7 @@ body {
   /* video */
     
   .video {
-    padding: 262px 0 103px;
+    padding: 265px 0 103px;
   }
   
   .section-title_video {
@@ -462,13 +462,13 @@ body {
   }
   
   .subscribe__form {
-    margin: 16px auto 23px;
+    margin: 17px auto 19px;
   }
   
   .subscribe__input {
     font-family: 'Ubuntu', sans-serif;
     font-size: 13px;
-    padding: 0 43px 0 33px;
+    padding: 0 47px 0 33px;
     outline: none;
     width: 385px;
     height: 45px;
