@@ -51,7 +51,7 @@ body {
   }
   
   .section-text {
-    margin-bottom: 74px;
+    margin-bottom: 78px;
     max-width: 561px;
     max-width: 561px;
   }
@@ -224,7 +224,7 @@ body {
   /* projects */
   
   .projects {
-    padding: 103px 0 205px;
+    padding: 100px 0 205px;
     background: #F7F6F8;
   }
   
@@ -277,14 +277,18 @@ body {
   
   .achievements__item {
     text-align: center;
+    width: 100px;
   }
   
   .achievements__number{
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
+  .achievements__text {
+    margin-top: 12px;
+  }
   .more-wrap {
     padding: 51px 0;
     margin: 0 auto -372px;
@@ -292,7 +296,8 @@ body {
     background: #F4EAFF;
     border-radius: 15px;
     text-align: center;
-    z-index: 10;
+    position: relative;
+    z-index: 3;
   }
   
   .more-wrap__title {
