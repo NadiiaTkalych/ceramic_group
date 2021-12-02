@@ -53,7 +53,6 @@ body {
   .section-text {
     margin-bottom: 78px;
     max-width: 561px;
-    max-width: 561px;
   }
   
   .btn {
@@ -451,7 +450,6 @@ body {
   .subscribe__text {
     font-size: 13px;
   } */
-/* test */
 
   .subscribe {
     margin: auto 0;
@@ -512,11 +510,17 @@ body {
 	.container {
 		max-width: 960px;
 	}
+  .offer__text {
+    width: 100%;
+  }
   .projects-card__img {
     width: 97%;
   }
-  .services__item:last-child {
-    margin-bottom: 0;
+  .services {
+    margin-bottom: 78px;
+  }
+  .services__item {
+    width: 48%;
   }
 }
 
@@ -525,11 +529,20 @@ body {
 	.container {
 		max-width: 720px;
 	}
+  .section-text {
+    max-width: 100%;
+  }
   .nav__tel {
     display: none;
   }
   .btn {
     font-size: 15px;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .services__item:last-child {
+    margin-bottom: 0;
   }
   .more-wrap {
     margin-bottom: -431px;
@@ -552,6 +565,9 @@ body {
   .footer-info {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+  .contacts-list__networks {
+    margin-bottom: 70px;
   }
   .contacts-wrap {
     margin: 0 145px 82px 0;
@@ -601,32 +617,65 @@ body {
 		padding: 0 15px;
 		width: auto;
 	}
-  .offer__title {
-    width: 70%;
+  .btn:not(.btn_subscribe) {
+    width: 100%;
   }
+  .section-text {
+    margin-bottom: 30px;
+  }
+  .all-services {
+    padding: 68px 0;
+  }
+  .offer__title {
+    font-size: 30px;
+    max-width: 100%;
+  }
+  .services {
+    margin-bottom: 45px;
+}
   .services__item {
-    width: 449px;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 25px;
   }
   .services__img {
-    width: 185px;
+    width: 100%;
+    height: 210px;
+    margin: 0 0 20px;
+  }
+  .projects {
+    padding-top: 68px;
+  }
+  .projects-card__img {
+    max-width: 100%;
+  }
+  .achievements {
+    margin-top: 33px;
+    padding-top: 35px;
+  }
+  .achievements__list {
+    margin-bottom: 30px;
+  }
+  .video {
+    padding: 265px 0 35px;
+  }
+  .video-wrap {
+    padding-bottom: 33px;
   }
   .video-wrap iframe {
     height: 231px;
   }
+  .footer {
+    padding: 68px 0;
+  }
 }
 
-/* Andrew`s breakpoint: 0px (320px) - 450px */
-/* @media (max-width: 450px) {
+/*0px (320px) - 450px */
+@media (max-width: 450px) {
 	.container {
 		width: 100%;
 	}
-  .services__item {
-    flex-direction: column;
-  }
-  .services {
-    width: 232px;
-  }
-  .projects-card__img {
+  .subscribe__input {
     width: 100%;
   }
-} */
+}
